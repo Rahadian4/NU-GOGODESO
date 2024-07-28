@@ -1,0 +1,150 @@
+/* Reset default margin dan padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Atur font dan background dasar */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styling untuk header */
+header {
+    background: linear-gradient(to right, #20d42f, #069101);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Styling untuk section */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk foto ketua dan wakil ketua */
+.leader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.leader-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #27f765;
+    margin-right: 20px;
+}
+
+.leader-info h3 {
+    margin: 0;
+}
+
+.leader-info p {
+    margin: 5px 0;
+}
+
+/* Styling untuk link media sosial */
+#social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#social-media li {
+    margin: 10px;
+}
+
+#social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#social-media a:hover {
+    background-color: #27f765; /* Warna hijau pada hover */
+    transform: scale(1.05);
+}
+
+/* Styling untuk footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
+}
+
+/* Responsivitas untuk perangkat mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .leader-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    #social-media a {
+        padding: 8px 16px;
+    }
+}
+
+/* Responsivitas untuk perangkat kecil (smartphone) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .leader-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}
